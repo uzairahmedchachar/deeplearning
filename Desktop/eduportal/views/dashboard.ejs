@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduPortal - Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <%- include('partials/sidebar') %>
+
+    <main class="content">
+      <h1 class="page-title">STUDENT ACADEMIC DETAIL</h1>
+
+      <div class="card grid">
+        <div class="item"><span>Name</span><strong><%= student.name %></strong></div>
+        <div class="item"><span>Semester</span><strong><%= student.semester %></strong></div>
+        <div class="item"><span>Program</span><strong><%= student.program %></strong></div>
+        <div class="item"><span>Batch</span><strong><%= student.batch %></strong></div>
+      </div>
+
+      <div class="card grid">
+        <div class="item"><span>CGPA</span><strong><%= student.cgpa.toFixed(2) %></strong></div>
+        <div class="item"><span>Completed Credit Hours</span><strong><%= student.completed_credits %></strong></div>
+        <div class="item"><span>Required Credit Hours</span><strong><%= student.required_credits %></strong></div>
+        <div class="item"><span>Max Credit Hours Allowed</span><strong><%= student.max_credits %></strong></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

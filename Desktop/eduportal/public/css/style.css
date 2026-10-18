@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; }
+
+/* Login */
+.login-page { display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+.login-box { background: #fff; padding: 30px; width: 360px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,.15); }
+.login-box h2 { margin: 0; text-align: center; color: #0a2a7a; }
+.login-box .sub { text-align: center; color: #777; margin-top: 4px; }
+.login-box label { display: block; margin-top: 12px; font-size: 14px; font-weight: bold; }
+.login-box input { width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #ccc; border-radius: 6px; }
+.captcha-row { display: flex; align-items: center; gap: 10px; margin-top: 6px; }
+.captcha-row img { background: #eee; border-radius: 6px; }
+.captcha-row button { padding: 8px 12px; cursor: pointer; }
+.btn { width: 100%; margin-top: 18px; padding: 11px; background: #0a2a7a; color: #fff; border: 0; border-radius: 6px; cursor: pointer; font-size: 15px; }
+.error { background: #fde8e8; color: #c00; padding: 8px; border-radius: 6px; text-align: center; }
+
+/* Layout */
+.layout { display: flex; min-height: 100vh; }
+.sidebar { width: 240px; background: #000; color: #fff; padding: 20px; }
+.sidebar h2 { margin-top: 0; }
+.sidebar a { display: block; color: #fff; text-decoration: none; padding: 12px 8px; font-weight: bold; border-radius: 6px; }
+.sidebar a:hover, .sidebar a.active { background: #222; }
+.content { flex: 1; padding: 24px; }
+.page-title { color: #0a2a7a; margin-top: 0; }
+.card { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.item span { display: block; color: #777; font-size: 13px; }
+.item strong { display: block; margin-top: 4px; font-size: 18px; color: #2d4fd1; }
